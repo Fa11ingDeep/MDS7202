@@ -8,11 +8,11 @@ Este repositorio contiene los laboratorios y entregas del curso, organizados por
 
 | Nombre | GitHub |
 |--------|--------|
-| Jiale Chen | [@usuario1](https://github.com/Fa11ingDeep) |
+| Jiale Chen | [@Fa11ingDeep](https://github.com/Fa11ingDeep) |
 | Nombre Apellido 2 | [@usuario2](https://github.com/usuario2) |
 
 ## Estructura del repositorio
-
+```bash
 .
 ├── labs/
 │   ├── lab_1/
@@ -20,10 +20,12 @@ Este repositorio contiene los laboratorios y entregas del curso, organizados por
 ├── pyproject.toml
 ├── .pre-commit-config.yaml
 └── README.md
+```
 
 ## Configuración del entorno
-
+```bash
 uv venv
 source .venv/bin/activate
 uv sync
 pre-commit install
+```
