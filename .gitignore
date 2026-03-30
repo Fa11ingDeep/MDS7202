@@ -213,3 +213,6 @@ lab1/
 *.png
 *.jpg
 *.jpeg
+
+# Ignorar datos en formato json
+*.json
