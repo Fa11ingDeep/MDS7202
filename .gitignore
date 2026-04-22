@@ -216,3 +216,6 @@ lab1/
 
 # Ignorar datos en formato json
 *.json
+# Ignorar datos en formato pickle
+*.pkl
+*.pickle
