@@ -219,3 +219,11 @@ lab1/
 # Ignorar datos en formato pickle
 *.pkl
 *.pickle
+# Ignorar datos en formato csv
+*.csv
+# Ignorar datos en formato xlsx
+*.xlsx
+# Ignorar markdown del lab 6
+labs/lab_6/documentacion_dataset.md
+# Ignorar MACOX del lab 6
+labs/lab_6/__MACOSX/
