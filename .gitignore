@@ -227,3 +227,5 @@ lab1/
 labs/lab_6/documentacion_dataset.md
 # Ignorar MACOX del lab 6
 labs/lab_6/__MACOSX/
+# Ignorar los archivos formato db
+*.db
