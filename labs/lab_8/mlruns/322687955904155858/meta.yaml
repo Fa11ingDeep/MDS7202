@@ -1,0 +1,6 @@
+artifact_location: file:///C:/MDS7202/labs/lab_8/mlruns/322687955904155858
+creation_time: 1780957182996
+experiment_id: '322687955904155858'
+last_update_time: 1780957182996
+lifecycle_stage: active
+name: optuna_xgboost_water_potability

@@ -229,3 +229,10 @@ labs/lab_6/documentacion_dataset.md
 labs/lab_6/__MACOSX/
 # Ignorar los archivos formato db
 *.db
+# Ignorar MACOX del lab 8
+labs/lab_8/__MACOSX/
+# No ignorar el modelo del lab 8
+!labs/lab_8/models/**
+# No ignorar la imagen del lab 8
+!labs/lab_8/imagenes/
+!labs/lab_8/imagenes/**

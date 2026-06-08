@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/MDS7202/labs/lab_8/mlruns/322687955904155858/c23d88621055418aa2268b9d734ab470/artifacts
+end_time: 1780957193531
+entry_point_name: ''
+experiment_id: '322687955904155858'
+lifecycle_stage: active
+run_id: c23d88621055418aa2268b9d734ab470
+run_name: XGBoost lr=0.190, depth=3
+run_uuid: c23d88621055418aa2268b9d734ab470
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780957189368
+status: 3
+tags: []
+user_id: '14040'
