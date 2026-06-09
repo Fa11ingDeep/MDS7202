@@ -1,0 +1,6 @@
+library,version
+mlflow,2.22.1
+optuna,4.9.0
+pandas,2.3.3
+sklearn,1.7.2
+xgboost,3.2.0
