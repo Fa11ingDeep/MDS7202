@@ -9,10 +9,14 @@ authors = [
 requires-python = ">=3.12,<3.13"
 
 dependencies = [
+    "cryptography>=48.0.0",
+    "faiss-cpu>=1.14.3",
     "fastapi>=0.136.3",
     "ipykernel>=6.29",
     "ipywidgets>=8.1.8",
     "jupyterlab>=4.2",
+    "langchain-community>=0.4.2",
+    "langchain-google-genai>=4.2.5",
     "lightgbm>=4.6.0",
     "matplotlib>=3.9",
     "missingno>=0.5.2",
@@ -27,6 +31,9 @@ dependencies = [
     "plotly>=5.24",
     "pre-commit>=4",
     "protobuf<5",
+    "pypdf>=6.13.3",
+    "pypdf2>=3.0.1",
+    "python-dotenv>=1.2.2",
     "ruff>=0.8",
     "scikit-learn>=1.5,<1.8",
     "setuptools<82.0.0",
