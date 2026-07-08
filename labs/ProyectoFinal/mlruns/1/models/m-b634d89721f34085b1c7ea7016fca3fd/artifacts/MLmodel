@@ -1,0 +1,858 @@
+artifact_path: /home/bot/MDS7202/labs/ProyectoFinal/mlruns/1/models/m-b634d89721f34085b1c7ea7016fca3fd/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.14.0
+model_id: m-b634d89721f34085b1c7ea7016fca3fd
+model_size_bytes: 12602057
+model_uuid: m-b634d89721f34085b1c7ea7016fca3fd
+prompts: null
+run_id: bbbde867d46a45239f2beac433fe10f5
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "long", "name": "N_Caracteres_Ticket", "required": true}, {"type":
+    "string", "name": "Canal_Ticket", "required": true}, {"type": "string", "name":
+    "Categor\u00eda_Problema", "required": true}, {"type": "string", "name": "Usuario-Tipo_de_Cuenta",
+    "required": true}, {"type": "long", "name": "Usuario-Antiguedad_Cuenta_Dias",
+    "required": true}, {"type": "string", "name": "Fecha_Env\u00edo", "required":
+    true}, {"type": "string", "name": "Texto", "required": true}, {"type": "double",
+    "name": "embedding_dim_1", "required": true}, {"type": "double", "name": "embedding_dim_2",
+    "required": true}, {"type": "double", "name": "embedding_dim_3", "required": true},
+    {"type": "double", "name": "embedding_dim_4", "required": true}, {"type": "double",
+    "name": "embedding_dim_5", "required": true}, {"type": "double", "name": "embedding_dim_6",
+    "required": true}, {"type": "double", "name": "embedding_dim_7", "required": true},
+    {"type": "double", "name": "embedding_dim_8", "required": true}, {"type": "double",
+    "name": "embedding_dim_9", "required": true}, {"type": "double", "name": "embedding_dim_10",
+    "required": true}, {"type": "double", "name": "embedding_dim_11", "required":
+    true}, {"type": "double", "name": "embedding_dim_12", "required": true}, {"type":
+    "double", "name": "embedding_dim_13", "required": true}, {"type": "double", "name":
+    "embedding_dim_14", "required": true}, {"type": "double", "name": "embedding_dim_15",
+    "required": true}, {"type": "double", "name": "embedding_dim_16", "required":
+    true}, {"type": "double", "name": "embedding_dim_17", "required": true}, {"type":
+    "double", "name": "embedding_dim_18", "required": true}, {"type": "double", "name":
+    "embedding_dim_19", "required": true}, {"type": "double", "name": "embedding_dim_20",
+    "required": true}, {"type": "double", "name": "embedding_dim_21", "required":
+    true}, {"type": "double", "name": "embedding_dim_22", "required": true}, {"type":
+    "double", "name": "embedding_dim_23", "required": true}, {"type": "double", "name":
+    "embedding_dim_24", "required": true}, {"type": "double", "name": "embedding_dim_25",
+    "required": true}, {"type": "double", "name": "embedding_dim_26", "required":
+    true}, {"type": "double", "name": "embedding_dim_27", "required": true}, {"type":
+    "double", "name": "embedding_dim_28", "required": true}, {"type": "double", "name":
+    "embedding_dim_29", "required": true}, {"type": "double", "name": "embedding_dim_30",
+    "required": true}, {"type": "double", "name": "embedding_dim_31", "required":
+    true}, {"type": "double", "name": "embedding_dim_32", "required": true}, {"type":
+    "double", "name": "embedding_dim_33", "required": true}, {"type": "double", "name":
+    "embedding_dim_34", "required": true}, {"type": "double", "name": "embedding_dim_35",
+    "required": true}, {"type": "double", "name": "embedding_dim_36", "required":
+    true}, {"type": "double", "name": "embedding_dim_37", "required": true}, {"type":
+    "double", "name": "embedding_dim_38", "required": true}, {"type": "double", "name":
+    "embedding_dim_39", "required": true}, {"type": "double", "name": "embedding_dim_40",
+    "required": true}, {"type": "double", "name": "embedding_dim_41", "required":
+    true}, {"type": "double", "name": "embedding_dim_42", "required": true}, {"type":
+    "double", "name": "embedding_dim_43", "required": true}, {"type": "double", "name":
+    "embedding_dim_44", "required": true}, {"type": "double", "name": "embedding_dim_45",
+    "required": true}, {"type": "double", "name": "embedding_dim_46", "required":
+    true}, {"type": "double", "name": "embedding_dim_47", "required": true}, {"type":
+    "double", "name": "embedding_dim_48", "required": true}, {"type": "double", "name":
+    "embedding_dim_49", "required": true}, {"type": "double", "name": "embedding_dim_50",
+    "required": true}, {"type": "double", "name": "embedding_dim_51", "required":
+    true}, {"type": "double", "name": "embedding_dim_52", "required": true}, {"type":
+    "double", "name": "embedding_dim_53", "required": true}, {"type": "double", "name":
+    "embedding_dim_54", "required": true}, {"type": "double", "name": "embedding_dim_55",
+    "required": true}, {"type": "double", "name": "embedding_dim_56", "required":
+    true}, {"type": "double", "name": "embedding_dim_57", "required": true}, {"type":
+    "double", "name": "embedding_dim_58", "required": true}, {"type": "double", "name":
+    "embedding_dim_59", "required": true}, {"type": "double", "name": "embedding_dim_60",
+    "required": true}, {"type": "double", "name": "embedding_dim_61", "required":
+    true}, {"type": "double", "name": "embedding_dim_62", "required": true}, {"type":
+    "double", "name": "embedding_dim_63", "required": true}, {"type": "double", "name":
+    "embedding_dim_64", "required": true}, {"type": "double", "name": "embedding_dim_65",
+    "required": true}, {"type": "double", "name": "embedding_dim_66", "required":
+    true}, {"type": "double", "name": "embedding_dim_67", "required": true}, {"type":
+    "double", "name": "embedding_dim_68", "required": true}, {"type": "double", "name":
+    "embedding_dim_69", "required": true}, {"type": "double", "name": "embedding_dim_70",
+    "required": true}, {"type": "double", "name": "embedding_dim_71", "required":
+    true}, {"type": "double", "name": "embedding_dim_72", "required": true}, {"type":
+    "double", "name": "embedding_dim_73", "required": true}, {"type": "double", "name":
+    "embedding_dim_74", "required": true}, {"type": "double", "name": "embedding_dim_75",
+    "required": true}, {"type": "double", "name": "embedding_dim_76", "required":
+    true}, {"type": "double", "name": "embedding_dim_77", "required": true}, {"type":
+    "double", "name": "embedding_dim_78", "required": true}, {"type": "double", "name":
+    "embedding_dim_79", "required": true}, {"type": "double", "name": "embedding_dim_80",
+    "required": true}, {"type": "double", "name": "embedding_dim_81", "required":
+    true}, {"type": "double", "name": "embedding_dim_82", "required": true}, {"type":
+    "double", "name": "embedding_dim_83", "required": true}, {"type": "double", "name":
+    "embedding_dim_84", "required": true}, {"type": "double", "name": "embedding_dim_85",
+    "required": true}, {"type": "double", "name": "embedding_dim_86", "required":
+    true}, {"type": "double", "name": "embedding_dim_87", "required": true}, {"type":
+    "double", "name": "embedding_dim_88", "required": true}, {"type": "double", "name":
+    "embedding_dim_89", "required": true}, {"type": "double", "name": "embedding_dim_90",
+    "required": true}, {"type": "double", "name": "embedding_dim_91", "required":
+    true}, {"type": "double", "name": "embedding_dim_92", "required": true}, {"type":
+    "double", "name": "embedding_dim_93", "required": true}, {"type": "double", "name":
+    "embedding_dim_94", "required": true}, {"type": "double", "name": "embedding_dim_95",
+    "required": true}, {"type": "double", "name": "embedding_dim_96", "required":
+    true}, {"type": "double", "name": "embedding_dim_97", "required": true}, {"type":
+    "double", "name": "embedding_dim_98", "required": true}, {"type": "double", "name":
+    "embedding_dim_99", "required": true}, {"type": "double", "name": "embedding_dim_100",
+    "required": true}, {"type": "double", "name": "embedding_dim_101", "required":
+    true}, {"type": "double", "name": "embedding_dim_102", "required": true}, {"type":
+    "double", "name": "embedding_dim_103", "required": true}, {"type": "double", "name":
+    "embedding_dim_104", "required": true}, {"type": "double", "name": "embedding_dim_105",
+    "required": true}, {"type": "double", "name": "embedding_dim_106", "required":
+    true}, {"type": "double", "name": "embedding_dim_107", "required": true}, {"type":
+    "double", "name": "embedding_dim_108", "required": true}, {"type": "double", "name":
+    "embedding_dim_109", "required": true}, {"type": "double", "name": "embedding_dim_110",
+    "required": true}, {"type": "double", "name": "embedding_dim_111", "required":
+    true}, {"type": "double", "name": "embedding_dim_112", "required": true}, {"type":
+    "double", "name": "embedding_dim_113", "required": true}, {"type": "double", "name":
+    "embedding_dim_114", "required": true}, {"type": "double", "name": "embedding_dim_115",
+    "required": true}, {"type": "double", "name": "embedding_dim_116", "required":
+    true}, {"type": "double", "name": "embedding_dim_117", "required": true}, {"type":
+    "double", "name": "embedding_dim_118", "required": true}, {"type": "double", "name":
+    "embedding_dim_119", "required": true}, {"type": "double", "name": "embedding_dim_120",
+    "required": true}, {"type": "double", "name": "embedding_dim_121", "required":
+    true}, {"type": "double", "name": "embedding_dim_122", "required": true}, {"type":
+    "double", "name": "embedding_dim_123", "required": true}, {"type": "double", "name":
+    "embedding_dim_124", "required": true}, {"type": "double", "name": "embedding_dim_125",
+    "required": true}, {"type": "double", "name": "embedding_dim_126", "required":
+    true}, {"type": "double", "name": "embedding_dim_127", "required": true}, {"type":
+    "double", "name": "embedding_dim_128", "required": true}, {"type": "double", "name":
+    "embedding_dim_129", "required": true}, {"type": "double", "name": "embedding_dim_130",
+    "required": true}, {"type": "double", "name": "embedding_dim_131", "required":
+    true}, {"type": "double", "name": "embedding_dim_132", "required": true}, {"type":
+    "double", "name": "embedding_dim_133", "required": true}, {"type": "double", "name":
+    "embedding_dim_134", "required": true}, {"type": "double", "name": "embedding_dim_135",
+    "required": true}, {"type": "double", "name": "embedding_dim_136", "required":
+    true}, {"type": "double", "name": "embedding_dim_137", "required": true}, {"type":
+    "double", "name": "embedding_dim_138", "required": true}, {"type": "double", "name":
+    "embedding_dim_139", "required": true}, {"type": "double", "name": "embedding_dim_140",
+    "required": true}, {"type": "double", "name": "embedding_dim_141", "required":
+    true}, {"type": "double", "name": "embedding_dim_142", "required": true}, {"type":
+    "double", "name": "embedding_dim_143", "required": true}, {"type": "double", "name":
+    "embedding_dim_144", "required": true}, {"type": "double", "name": "embedding_dim_145",
+    "required": true}, {"type": "double", "name": "embedding_dim_146", "required":
+    true}, {"type": "double", "name": "embedding_dim_147", "required": true}, {"type":
+    "double", "name": "embedding_dim_148", "required": true}, {"type": "double", "name":
+    "embedding_dim_149", "required": true}, {"type": "double", "name": "embedding_dim_150",
+    "required": true}, {"type": "double", "name": "embedding_dim_151", "required":
+    true}, {"type": "double", "name": "embedding_dim_152", "required": true}, {"type":
+    "double", "name": "embedding_dim_153", "required": true}, {"type": "double", "name":
+    "embedding_dim_154", "required": true}, {"type": "double", "name": "embedding_dim_155",
+    "required": true}, {"type": "double", "name": "embedding_dim_156", "required":
+    true}, {"type": "double", "name": "embedding_dim_157", "required": true}, {"type":
+    "double", "name": "embedding_dim_158", "required": true}, {"type": "double", "name":
+    "embedding_dim_159", "required": true}, {"type": "double", "name": "embedding_dim_160",
+    "required": true}, {"type": "double", "name": "embedding_dim_161", "required":
+    true}, {"type": "double", "name": "embedding_dim_162", "required": true}, {"type":
+    "double", "name": "embedding_dim_163", "required": true}, {"type": "double", "name":
+    "embedding_dim_164", "required": true}, {"type": "double", "name": "embedding_dim_165",
+    "required": true}, {"type": "double", "name": "embedding_dim_166", "required":
+    true}, {"type": "double", "name": "embedding_dim_167", "required": true}, {"type":
+    "double", "name": "embedding_dim_168", "required": true}, {"type": "double", "name":
+    "embedding_dim_169", "required": true}, {"type": "double", "name": "embedding_dim_170",
+    "required": true}, {"type": "double", "name": "embedding_dim_171", "required":
+    true}, {"type": "double", "name": "embedding_dim_172", "required": true}, {"type":
+    "double", "name": "embedding_dim_173", "required": true}, {"type": "double", "name":
+    "embedding_dim_174", "required": true}, {"type": "double", "name": "embedding_dim_175",
+    "required": true}, {"type": "double", "name": "embedding_dim_176", "required":
+    true}, {"type": "double", "name": "embedding_dim_177", "required": true}, {"type":
+    "double", "name": "embedding_dim_178", "required": true}, {"type": "double", "name":
+    "embedding_dim_179", "required": true}, {"type": "double", "name": "embedding_dim_180",
+    "required": true}, {"type": "double", "name": "embedding_dim_181", "required":
+    true}, {"type": "double", "name": "embedding_dim_182", "required": true}, {"type":
+    "double", "name": "embedding_dim_183", "required": true}, {"type": "double", "name":
+    "embedding_dim_184", "required": true}, {"type": "double", "name": "embedding_dim_185",
+    "required": true}, {"type": "double", "name": "embedding_dim_186", "required":
+    true}, {"type": "double", "name": "embedding_dim_187", "required": true}, {"type":
+    "double", "name": "embedding_dim_188", "required": true}, {"type": "double", "name":
+    "embedding_dim_189", "required": true}, {"type": "double", "name": "embedding_dim_190",
+    "required": true}, {"type": "double", "name": "embedding_dim_191", "required":
+    true}, {"type": "double", "name": "embedding_dim_192", "required": true}, {"type":
+    "double", "name": "embedding_dim_193", "required": true}, {"type": "double", "name":
+    "embedding_dim_194", "required": true}, {"type": "double", "name": "embedding_dim_195",
+    "required": true}, {"type": "double", "name": "embedding_dim_196", "required":
+    true}, {"type": "double", "name": "embedding_dim_197", "required": true}, {"type":
+    "double", "name": "embedding_dim_198", "required": true}, {"type": "double", "name":
+    "embedding_dim_199", "required": true}, {"type": "double", "name": "embedding_dim_200",
+    "required": true}, {"type": "double", "name": "embedding_dim_201", "required":
+    true}, {"type": "double", "name": "embedding_dim_202", "required": true}, {"type":
+    "double", "name": "embedding_dim_203", "required": true}, {"type": "double", "name":
+    "embedding_dim_204", "required": true}, {"type": "double", "name": "embedding_dim_205",
+    "required": true}, {"type": "double", "name": "embedding_dim_206", "required":
+    true}, {"type": "double", "name": "embedding_dim_207", "required": true}, {"type":
+    "double", "name": "embedding_dim_208", "required": true}, {"type": "double", "name":
+    "embedding_dim_209", "required": true}, {"type": "double", "name": "embedding_dim_210",
+    "required": true}, {"type": "double", "name": "embedding_dim_211", "required":
+    true}, {"type": "double", "name": "embedding_dim_212", "required": true}, {"type":
+    "double", "name": "embedding_dim_213", "required": true}, {"type": "double", "name":
+    "embedding_dim_214", "required": true}, {"type": "double", "name": "embedding_dim_215",
+    "required": true}, {"type": "double", "name": "embedding_dim_216", "required":
+    true}, {"type": "double", "name": "embedding_dim_217", "required": true}, {"type":
+    "double", "name": "embedding_dim_218", "required": true}, {"type": "double", "name":
+    "embedding_dim_219", "required": true}, {"type": "double", "name": "embedding_dim_220",
+    "required": true}, {"type": "double", "name": "embedding_dim_221", "required":
+    true}, {"type": "double", "name": "embedding_dim_222", "required": true}, {"type":
+    "double", "name": "embedding_dim_223", "required": true}, {"type": "double", "name":
+    "embedding_dim_224", "required": true}, {"type": "double", "name": "embedding_dim_225",
+    "required": true}, {"type": "double", "name": "embedding_dim_226", "required":
+    true}, {"type": "double", "name": "embedding_dim_227", "required": true}, {"type":
+    "double", "name": "embedding_dim_228", "required": true}, {"type": "double", "name":
+    "embedding_dim_229", "required": true}, {"type": "double", "name": "embedding_dim_230",
+    "required": true}, {"type": "double", "name": "embedding_dim_231", "required":
+    true}, {"type": "double", "name": "embedding_dim_232", "required": true}, {"type":
+    "double", "name": "embedding_dim_233", "required": true}, {"type": "double", "name":
+    "embedding_dim_234", "required": true}, {"type": "double", "name": "embedding_dim_235",
+    "required": true}, {"type": "double", "name": "embedding_dim_236", "required":
+    true}, {"type": "double", "name": "embedding_dim_237", "required": true}, {"type":
+    "double", "name": "embedding_dim_238", "required": true}, {"type": "double", "name":
+    "embedding_dim_239", "required": true}, {"type": "double", "name": "embedding_dim_240",
+    "required": true}, {"type": "double", "name": "embedding_dim_241", "required":
+    true}, {"type": "double", "name": "embedding_dim_242", "required": true}, {"type":
+    "double", "name": "embedding_dim_243", "required": true}, {"type": "double", "name":
+    "embedding_dim_244", "required": true}, {"type": "double", "name": "embedding_dim_245",
+    "required": true}, {"type": "double", "name": "embedding_dim_246", "required":
+    true}, {"type": "double", "name": "embedding_dim_247", "required": true}, {"type":
+    "double", "name": "embedding_dim_248", "required": true}, {"type": "double", "name":
+    "embedding_dim_249", "required": true}, {"type": "double", "name": "embedding_dim_250",
+    "required": true}, {"type": "double", "name": "embedding_dim_251", "required":
+    true}, {"type": "double", "name": "embedding_dim_252", "required": true}, {"type":
+    "double", "name": "embedding_dim_253", "required": true}, {"type": "double", "name":
+    "embedding_dim_254", "required": true}, {"type": "double", "name": "embedding_dim_255",
+    "required": true}, {"type": "double", "name": "embedding_dim_256", "required":
+    true}, {"type": "double", "name": "embedding_dim_257", "required": true}, {"type":
+    "double", "name": "embedding_dim_258", "required": true}, {"type": "double", "name":
+    "embedding_dim_259", "required": true}, {"type": "double", "name": "embedding_dim_260",
+    "required": true}, {"type": "double", "name": "embedding_dim_261", "required":
+    true}, {"type": "double", "name": "embedding_dim_262", "required": true}, {"type":
+    "double", "name": "embedding_dim_263", "required": true}, {"type": "double", "name":
+    "embedding_dim_264", "required": true}, {"type": "double", "name": "embedding_dim_265",
+    "required": true}, {"type": "double", "name": "embedding_dim_266", "required":
+    true}, {"type": "double", "name": "embedding_dim_267", "required": true}, {"type":
+    "double", "name": "embedding_dim_268", "required": true}, {"type": "double", "name":
+    "embedding_dim_269", "required": true}, {"type": "double", "name": "embedding_dim_270",
+    "required": true}, {"type": "double", "name": "embedding_dim_271", "required":
+    true}, {"type": "double", "name": "embedding_dim_272", "required": true}, {"type":
+    "double", "name": "embedding_dim_273", "required": true}, {"type": "double", "name":
+    "embedding_dim_274", "required": true}, {"type": "double", "name": "embedding_dim_275",
+    "required": true}, {"type": "double", "name": "embedding_dim_276", "required":
+    true}, {"type": "double", "name": "embedding_dim_277", "required": true}, {"type":
+    "double", "name": "embedding_dim_278", "required": true}, {"type": "double", "name":
+    "embedding_dim_279", "required": true}, {"type": "double", "name": "embedding_dim_280",
+    "required": true}, {"type": "double", "name": "embedding_dim_281", "required":
+    true}, {"type": "double", "name": "embedding_dim_282", "required": true}, {"type":
+    "double", "name": "embedding_dim_283", "required": true}, {"type": "double", "name":
+    "embedding_dim_284", "required": true}, {"type": "double", "name": "embedding_dim_285",
+    "required": true}, {"type": "double", "name": "embedding_dim_286", "required":
+    true}, {"type": "double", "name": "embedding_dim_287", "required": true}, {"type":
+    "double", "name": "embedding_dim_288", "required": true}, {"type": "double", "name":
+    "embedding_dim_289", "required": true}, {"type": "double", "name": "embedding_dim_290",
+    "required": true}, {"type": "double", "name": "embedding_dim_291", "required":
+    true}, {"type": "double", "name": "embedding_dim_292", "required": true}, {"type":
+    "double", "name": "embedding_dim_293", "required": true}, {"type": "double", "name":
+    "embedding_dim_294", "required": true}, {"type": "double", "name": "embedding_dim_295",
+    "required": true}, {"type": "double", "name": "embedding_dim_296", "required":
+    true}, {"type": "double", "name": "embedding_dim_297", "required": true}, {"type":
+    "double", "name": "embedding_dim_298", "required": true}, {"type": "double", "name":
+    "embedding_dim_299", "required": true}, {"type": "double", "name": "embedding_dim_300",
+    "required": true}, {"type": "double", "name": "embedding_dim_301", "required":
+    true}, {"type": "double", "name": "embedding_dim_302", "required": true}, {"type":
+    "double", "name": "embedding_dim_303", "required": true}, {"type": "double", "name":
+    "embedding_dim_304", "required": true}, {"type": "double", "name": "embedding_dim_305",
+    "required": true}, {"type": "double", "name": "embedding_dim_306", "required":
+    true}, {"type": "double", "name": "embedding_dim_307", "required": true}, {"type":
+    "double", "name": "embedding_dim_308", "required": true}, {"type": "double", "name":
+    "embedding_dim_309", "required": true}, {"type": "double", "name": "embedding_dim_310",
+    "required": true}, {"type": "double", "name": "embedding_dim_311", "required":
+    true}, {"type": "double", "name": "embedding_dim_312", "required": true}, {"type":
+    "double", "name": "embedding_dim_313", "required": true}, {"type": "double", "name":
+    "embedding_dim_314", "required": true}, {"type": "double", "name": "embedding_dim_315",
+    "required": true}, {"type": "double", "name": "embedding_dim_316", "required":
+    true}, {"type": "double", "name": "embedding_dim_317", "required": true}, {"type":
+    "double", "name": "embedding_dim_318", "required": true}, {"type": "double", "name":
+    "embedding_dim_319", "required": true}, {"type": "double", "name": "embedding_dim_320",
+    "required": true}, {"type": "double", "name": "embedding_dim_321", "required":
+    true}, {"type": "double", "name": "embedding_dim_322", "required": true}, {"type":
+    "double", "name": "embedding_dim_323", "required": true}, {"type": "double", "name":
+    "embedding_dim_324", "required": true}, {"type": "double", "name": "embedding_dim_325",
+    "required": true}, {"type": "double", "name": "embedding_dim_326", "required":
+    true}, {"type": "double", "name": "embedding_dim_327", "required": true}, {"type":
+    "double", "name": "embedding_dim_328", "required": true}, {"type": "double", "name":
+    "embedding_dim_329", "required": true}, {"type": "double", "name": "embedding_dim_330",
+    "required": true}, {"type": "double", "name": "embedding_dim_331", "required":
+    true}, {"type": "double", "name": "embedding_dim_332", "required": true}, {"type":
+    "double", "name": "embedding_dim_333", "required": true}, {"type": "double", "name":
+    "embedding_dim_334", "required": true}, {"type": "double", "name": "embedding_dim_335",
+    "required": true}, {"type": "double", "name": "embedding_dim_336", "required":
+    true}, {"type": "double", "name": "embedding_dim_337", "required": true}, {"type":
+    "double", "name": "embedding_dim_338", "required": true}, {"type": "double", "name":
+    "embedding_dim_339", "required": true}, {"type": "double", "name": "embedding_dim_340",
+    "required": true}, {"type": "double", "name": "embedding_dim_341", "required":
+    true}, {"type": "double", "name": "embedding_dim_342", "required": true}, {"type":
+    "double", "name": "embedding_dim_343", "required": true}, {"type": "double", "name":
+    "embedding_dim_344", "required": true}, {"type": "double", "name": "embedding_dim_345",
+    "required": true}, {"type": "double", "name": "embedding_dim_346", "required":
+    true}, {"type": "double", "name": "embedding_dim_347", "required": true}, {"type":
+    "double", "name": "embedding_dim_348", "required": true}, {"type": "double", "name":
+    "embedding_dim_349", "required": true}, {"type": "double", "name": "embedding_dim_350",
+    "required": true}, {"type": "double", "name": "embedding_dim_351", "required":
+    true}, {"type": "double", "name": "embedding_dim_352", "required": true}, {"type":
+    "double", "name": "embedding_dim_353", "required": true}, {"type": "double", "name":
+    "embedding_dim_354", "required": true}, {"type": "double", "name": "embedding_dim_355",
+    "required": true}, {"type": "double", "name": "embedding_dim_356", "required":
+    true}, {"type": "double", "name": "embedding_dim_357", "required": true}, {"type":
+    "double", "name": "embedding_dim_358", "required": true}, {"type": "double", "name":
+    "embedding_dim_359", "required": true}, {"type": "double", "name": "embedding_dim_360",
+    "required": true}, {"type": "double", "name": "embedding_dim_361", "required":
+    true}, {"type": "double", "name": "embedding_dim_362", "required": true}, {"type":
+    "double", "name": "embedding_dim_363", "required": true}, {"type": "double", "name":
+    "embedding_dim_364", "required": true}, {"type": "double", "name": "embedding_dim_365",
+    "required": true}, {"type": "double", "name": "embedding_dim_366", "required":
+    true}, {"type": "double", "name": "embedding_dim_367", "required": true}, {"type":
+    "double", "name": "embedding_dim_368", "required": true}, {"type": "double", "name":
+    "embedding_dim_369", "required": true}, {"type": "double", "name": "embedding_dim_370",
+    "required": true}, {"type": "double", "name": "embedding_dim_371", "required":
+    true}, {"type": "double", "name": "embedding_dim_372", "required": true}, {"type":
+    "double", "name": "embedding_dim_373", "required": true}, {"type": "double", "name":
+    "embedding_dim_374", "required": true}, {"type": "double", "name": "embedding_dim_375",
+    "required": true}, {"type": "double", "name": "embedding_dim_376", "required":
+    true}, {"type": "double", "name": "embedding_dim_377", "required": true}, {"type":
+    "double", "name": "embedding_dim_378", "required": true}, {"type": "double", "name":
+    "embedding_dim_379", "required": true}, {"type": "double", "name": "embedding_dim_380",
+    "required": true}, {"type": "double", "name": "embedding_dim_381", "required":
+    true}, {"type": "double", "name": "embedding_dim_382", "required": true}, {"type":
+    "double", "name": "embedding_dim_383", "required": true}, {"type": "double", "name":
+    "embedding_dim_384", "required": true}, {"type": "double", "name": "embedding_dim_385",
+    "required": true}, {"type": "double", "name": "embedding_dim_386", "required":
+    true}, {"type": "double", "name": "embedding_dim_387", "required": true}, {"type":
+    "double", "name": "embedding_dim_388", "required": true}, {"type": "double", "name":
+    "embedding_dim_389", "required": true}, {"type": "double", "name": "embedding_dim_390",
+    "required": true}, {"type": "double", "name": "embedding_dim_391", "required":
+    true}, {"type": "double", "name": "embedding_dim_392", "required": true}, {"type":
+    "double", "name": "embedding_dim_393", "required": true}, {"type": "double", "name":
+    "embedding_dim_394", "required": true}, {"type": "double", "name": "embedding_dim_395",
+    "required": true}, {"type": "double", "name": "embedding_dim_396", "required":
+    true}, {"type": "double", "name": "embedding_dim_397", "required": true}, {"type":
+    "double", "name": "embedding_dim_398", "required": true}, {"type": "double", "name":
+    "embedding_dim_399", "required": true}, {"type": "double", "name": "embedding_dim_400",
+    "required": true}, {"type": "double", "name": "embedding_dim_401", "required":
+    true}, {"type": "double", "name": "embedding_dim_402", "required": true}, {"type":
+    "double", "name": "embedding_dim_403", "required": true}, {"type": "double", "name":
+    "embedding_dim_404", "required": true}, {"type": "double", "name": "embedding_dim_405",
+    "required": true}, {"type": "double", "name": "embedding_dim_406", "required":
+    true}, {"type": "double", "name": "embedding_dim_407", "required": true}, {"type":
+    "double", "name": "embedding_dim_408", "required": true}, {"type": "double", "name":
+    "embedding_dim_409", "required": true}, {"type": "double", "name": "embedding_dim_410",
+    "required": true}, {"type": "double", "name": "embedding_dim_411", "required":
+    true}, {"type": "double", "name": "embedding_dim_412", "required": true}, {"type":
+    "double", "name": "embedding_dim_413", "required": true}, {"type": "double", "name":
+    "embedding_dim_414", "required": true}, {"type": "double", "name": "embedding_dim_415",
+    "required": true}, {"type": "double", "name": "embedding_dim_416", "required":
+    true}, {"type": "double", "name": "embedding_dim_417", "required": true}, {"type":
+    "double", "name": "embedding_dim_418", "required": true}, {"type": "double", "name":
+    "embedding_dim_419", "required": true}, {"type": "double", "name": "embedding_dim_420",
+    "required": true}, {"type": "double", "name": "embedding_dim_421", "required":
+    true}, {"type": "double", "name": "embedding_dim_422", "required": true}, {"type":
+    "double", "name": "embedding_dim_423", "required": true}, {"type": "double", "name":
+    "embedding_dim_424", "required": true}, {"type": "double", "name": "embedding_dim_425",
+    "required": true}, {"type": "double", "name": "embedding_dim_426", "required":
+    true}, {"type": "double", "name": "embedding_dim_427", "required": true}, {"type":
+    "double", "name": "embedding_dim_428", "required": true}, {"type": "double", "name":
+    "embedding_dim_429", "required": true}, {"type": "double", "name": "embedding_dim_430",
+    "required": true}, {"type": "double", "name": "embedding_dim_431", "required":
+    true}, {"type": "double", "name": "embedding_dim_432", "required": true}, {"type":
+    "double", "name": "embedding_dim_433", "required": true}, {"type": "double", "name":
+    "embedding_dim_434", "required": true}, {"type": "double", "name": "embedding_dim_435",
+    "required": true}, {"type": "double", "name": "embedding_dim_436", "required":
+    true}, {"type": "double", "name": "embedding_dim_437", "required": true}, {"type":
+    "double", "name": "embedding_dim_438", "required": true}, {"type": "double", "name":
+    "embedding_dim_439", "required": true}, {"type": "double", "name": "embedding_dim_440",
+    "required": true}, {"type": "double", "name": "embedding_dim_441", "required":
+    true}, {"type": "double", "name": "embedding_dim_442", "required": true}, {"type":
+    "double", "name": "embedding_dim_443", "required": true}, {"type": "double", "name":
+    "embedding_dim_444", "required": true}, {"type": "double", "name": "embedding_dim_445",
+    "required": true}, {"type": "double", "name": "embedding_dim_446", "required":
+    true}, {"type": "double", "name": "embedding_dim_447", "required": true}, {"type":
+    "double", "name": "embedding_dim_448", "required": true}, {"type": "double", "name":
+    "embedding_dim_449", "required": true}, {"type": "double", "name": "embedding_dim_450",
+    "required": true}, {"type": "double", "name": "embedding_dim_451", "required":
+    true}, {"type": "double", "name": "embedding_dim_452", "required": true}, {"type":
+    "double", "name": "embedding_dim_453", "required": true}, {"type": "double", "name":
+    "embedding_dim_454", "required": true}, {"type": "double", "name": "embedding_dim_455",
+    "required": true}, {"type": "double", "name": "embedding_dim_456", "required":
+    true}, {"type": "double", "name": "embedding_dim_457", "required": true}, {"type":
+    "double", "name": "embedding_dim_458", "required": true}, {"type": "double", "name":
+    "embedding_dim_459", "required": true}, {"type": "double", "name": "embedding_dim_460",
+    "required": true}, {"type": "double", "name": "embedding_dim_461", "required":
+    true}, {"type": "double", "name": "embedding_dim_462", "required": true}, {"type":
+    "double", "name": "embedding_dim_463", "required": true}, {"type": "double", "name":
+    "embedding_dim_464", "required": true}, {"type": "double", "name": "embedding_dim_465",
+    "required": true}, {"type": "double", "name": "embedding_dim_466", "required":
+    true}, {"type": "double", "name": "embedding_dim_467", "required": true}, {"type":
+    "double", "name": "embedding_dim_468", "required": true}, {"type": "double", "name":
+    "embedding_dim_469", "required": true}, {"type": "double", "name": "embedding_dim_470",
+    "required": true}, {"type": "double", "name": "embedding_dim_471", "required":
+    true}, {"type": "double", "name": "embedding_dim_472", "required": true}, {"type":
+    "double", "name": "embedding_dim_473", "required": true}, {"type": "double", "name":
+    "embedding_dim_474", "required": true}, {"type": "double", "name": "embedding_dim_475",
+    "required": true}, {"type": "double", "name": "embedding_dim_476", "required":
+    true}, {"type": "double", "name": "embedding_dim_477", "required": true}, {"type":
+    "double", "name": "embedding_dim_478", "required": true}, {"type": "double", "name":
+    "embedding_dim_479", "required": true}, {"type": "double", "name": "embedding_dim_480",
+    "required": true}, {"type": "double", "name": "embedding_dim_481", "required":
+    true}, {"type": "double", "name": "embedding_dim_482", "required": true}, {"type":
+    "double", "name": "embedding_dim_483", "required": true}, {"type": "double", "name":
+    "embedding_dim_484", "required": true}, {"type": "double", "name": "embedding_dim_485",
+    "required": true}, {"type": "double", "name": "embedding_dim_486", "required":
+    true}, {"type": "double", "name": "embedding_dim_487", "required": true}, {"type":
+    "double", "name": "embedding_dim_488", "required": true}, {"type": "double", "name":
+    "embedding_dim_489", "required": true}, {"type": "double", "name": "embedding_dim_490",
+    "required": true}, {"type": "double", "name": "embedding_dim_491", "required":
+    true}, {"type": "double", "name": "embedding_dim_492", "required": true}, {"type":
+    "double", "name": "embedding_dim_493", "required": true}, {"type": "double", "name":
+    "embedding_dim_494", "required": true}, {"type": "double", "name": "embedding_dim_495",
+    "required": true}, {"type": "double", "name": "embedding_dim_496", "required":
+    true}, {"type": "double", "name": "embedding_dim_497", "required": true}, {"type":
+    "double", "name": "embedding_dim_498", "required": true}, {"type": "double", "name":
+    "embedding_dim_499", "required": true}, {"type": "double", "name": "embedding_dim_500",
+    "required": true}, {"type": "double", "name": "embedding_dim_501", "required":
+    true}, {"type": "double", "name": "embedding_dim_502", "required": true}, {"type":
+    "double", "name": "embedding_dim_503", "required": true}, {"type": "double", "name":
+    "embedding_dim_504", "required": true}, {"type": "double", "name": "embedding_dim_505",
+    "required": true}, {"type": "double", "name": "embedding_dim_506", "required":
+    true}, {"type": "double", "name": "embedding_dim_507", "required": true}, {"type":
+    "double", "name": "embedding_dim_508", "required": true}, {"type": "double", "name":
+    "embedding_dim_509", "required": true}, {"type": "double", "name": "embedding_dim_510",
+    "required": true}, {"type": "double", "name": "embedding_dim_511", "required":
+    true}, {"type": "double", "name": "embedding_dim_512", "required": true}, {"type":
+    "double", "name": "embedding_dim_513", "required": true}, {"type": "double", "name":
+    "embedding_dim_514", "required": true}, {"type": "double", "name": "embedding_dim_515",
+    "required": true}, {"type": "double", "name": "embedding_dim_516", "required":
+    true}, {"type": "double", "name": "embedding_dim_517", "required": true}, {"type":
+    "double", "name": "embedding_dim_518", "required": true}, {"type": "double", "name":
+    "embedding_dim_519", "required": true}, {"type": "double", "name": "embedding_dim_520",
+    "required": true}, {"type": "double", "name": "embedding_dim_521", "required":
+    true}, {"type": "double", "name": "embedding_dim_522", "required": true}, {"type":
+    "double", "name": "embedding_dim_523", "required": true}, {"type": "double", "name":
+    "embedding_dim_524", "required": true}, {"type": "double", "name": "embedding_dim_525",
+    "required": true}, {"type": "double", "name": "embedding_dim_526", "required":
+    true}, {"type": "double", "name": "embedding_dim_527", "required": true}, {"type":
+    "double", "name": "embedding_dim_528", "required": true}, {"type": "double", "name":
+    "embedding_dim_529", "required": true}, {"type": "double", "name": "embedding_dim_530",
+    "required": true}, {"type": "double", "name": "embedding_dim_531", "required":
+    true}, {"type": "double", "name": "embedding_dim_532", "required": true}, {"type":
+    "double", "name": "embedding_dim_533", "required": true}, {"type": "double", "name":
+    "embedding_dim_534", "required": true}, {"type": "double", "name": "embedding_dim_535",
+    "required": true}, {"type": "double", "name": "embedding_dim_536", "required":
+    true}, {"type": "double", "name": "embedding_dim_537", "required": true}, {"type":
+    "double", "name": "embedding_dim_538", "required": true}, {"type": "double", "name":
+    "embedding_dim_539", "required": true}, {"type": "double", "name": "embedding_dim_540",
+    "required": true}, {"type": "double", "name": "embedding_dim_541", "required":
+    true}, {"type": "double", "name": "embedding_dim_542", "required": true}, {"type":
+    "double", "name": "embedding_dim_543", "required": true}, {"type": "double", "name":
+    "embedding_dim_544", "required": true}, {"type": "double", "name": "embedding_dim_545",
+    "required": true}, {"type": "double", "name": "embedding_dim_546", "required":
+    true}, {"type": "double", "name": "embedding_dim_547", "required": true}, {"type":
+    "double", "name": "embedding_dim_548", "required": true}, {"type": "double", "name":
+    "embedding_dim_549", "required": true}, {"type": "double", "name": "embedding_dim_550",
+    "required": true}, {"type": "double", "name": "embedding_dim_551", "required":
+    true}, {"type": "double", "name": "embedding_dim_552", "required": true}, {"type":
+    "double", "name": "embedding_dim_553", "required": true}, {"type": "double", "name":
+    "embedding_dim_554", "required": true}, {"type": "double", "name": "embedding_dim_555",
+    "required": true}, {"type": "double", "name": "embedding_dim_556", "required":
+    true}, {"type": "double", "name": "embedding_dim_557", "required": true}, {"type":
+    "double", "name": "embedding_dim_558", "required": true}, {"type": "double", "name":
+    "embedding_dim_559", "required": true}, {"type": "double", "name": "embedding_dim_560",
+    "required": true}, {"type": "double", "name": "embedding_dim_561", "required":
+    true}, {"type": "double", "name": "embedding_dim_562", "required": true}, {"type":
+    "double", "name": "embedding_dim_563", "required": true}, {"type": "double", "name":
+    "embedding_dim_564", "required": true}, {"type": "double", "name": "embedding_dim_565",
+    "required": true}, {"type": "double", "name": "embedding_dim_566", "required":
+    true}, {"type": "double", "name": "embedding_dim_567", "required": true}, {"type":
+    "double", "name": "embedding_dim_568", "required": true}, {"type": "double", "name":
+    "embedding_dim_569", "required": true}, {"type": "double", "name": "embedding_dim_570",
+    "required": true}, {"type": "double", "name": "embedding_dim_571", "required":
+    true}, {"type": "double", "name": "embedding_dim_572", "required": true}, {"type":
+    "double", "name": "embedding_dim_573", "required": true}, {"type": "double", "name":
+    "embedding_dim_574", "required": true}, {"type": "double", "name": "embedding_dim_575",
+    "required": true}, {"type": "double", "name": "embedding_dim_576", "required":
+    true}, {"type": "double", "name": "embedding_dim_577", "required": true}, {"type":
+    "double", "name": "embedding_dim_578", "required": true}, {"type": "double", "name":
+    "embedding_dim_579", "required": true}, {"type": "double", "name": "embedding_dim_580",
+    "required": true}, {"type": "double", "name": "embedding_dim_581", "required":
+    true}, {"type": "double", "name": "embedding_dim_582", "required": true}, {"type":
+    "double", "name": "embedding_dim_583", "required": true}, {"type": "double", "name":
+    "embedding_dim_584", "required": true}, {"type": "double", "name": "embedding_dim_585",
+    "required": true}, {"type": "double", "name": "embedding_dim_586", "required":
+    true}, {"type": "double", "name": "embedding_dim_587", "required": true}, {"type":
+    "double", "name": "embedding_dim_588", "required": true}, {"type": "double", "name":
+    "embedding_dim_589", "required": true}, {"type": "double", "name": "embedding_dim_590",
+    "required": true}, {"type": "double", "name": "embedding_dim_591", "required":
+    true}, {"type": "double", "name": "embedding_dim_592", "required": true}, {"type":
+    "double", "name": "embedding_dim_593", "required": true}, {"type": "double", "name":
+    "embedding_dim_594", "required": true}, {"type": "double", "name": "embedding_dim_595",
+    "required": true}, {"type": "double", "name": "embedding_dim_596", "required":
+    true}, {"type": "double", "name": "embedding_dim_597", "required": true}, {"type":
+    "double", "name": "embedding_dim_598", "required": true}, {"type": "double", "name":
+    "embedding_dim_599", "required": true}, {"type": "double", "name": "embedding_dim_600",
+    "required": true}, {"type": "double", "name": "embedding_dim_601", "required":
+    true}, {"type": "double", "name": "embedding_dim_602", "required": true}, {"type":
+    "double", "name": "embedding_dim_603", "required": true}, {"type": "double", "name":
+    "embedding_dim_604", "required": true}, {"type": "double", "name": "embedding_dim_605",
+    "required": true}, {"type": "double", "name": "embedding_dim_606", "required":
+    true}, {"type": "double", "name": "embedding_dim_607", "required": true}, {"type":
+    "double", "name": "embedding_dim_608", "required": true}, {"type": "double", "name":
+    "embedding_dim_609", "required": true}, {"type": "double", "name": "embedding_dim_610",
+    "required": true}, {"type": "double", "name": "embedding_dim_611", "required":
+    true}, {"type": "double", "name": "embedding_dim_612", "required": true}, {"type":
+    "double", "name": "embedding_dim_613", "required": true}, {"type": "double", "name":
+    "embedding_dim_614", "required": true}, {"type": "double", "name": "embedding_dim_615",
+    "required": true}, {"type": "double", "name": "embedding_dim_616", "required":
+    true}, {"type": "double", "name": "embedding_dim_617", "required": true}, {"type":
+    "double", "name": "embedding_dim_618", "required": true}, {"type": "double", "name":
+    "embedding_dim_619", "required": true}, {"type": "double", "name": "embedding_dim_620",
+    "required": true}, {"type": "double", "name": "embedding_dim_621", "required":
+    true}, {"type": "double", "name": "embedding_dim_622", "required": true}, {"type":
+    "double", "name": "embedding_dim_623", "required": true}, {"type": "double", "name":
+    "embedding_dim_624", "required": true}, {"type": "double", "name": "embedding_dim_625",
+    "required": true}, {"type": "double", "name": "embedding_dim_626", "required":
+    true}, {"type": "double", "name": "embedding_dim_627", "required": true}, {"type":
+    "double", "name": "embedding_dim_628", "required": true}, {"type": "double", "name":
+    "embedding_dim_629", "required": true}, {"type": "double", "name": "embedding_dim_630",
+    "required": true}, {"type": "double", "name": "embedding_dim_631", "required":
+    true}, {"type": "double", "name": "embedding_dim_632", "required": true}, {"type":
+    "double", "name": "embedding_dim_633", "required": true}, {"type": "double", "name":
+    "embedding_dim_634", "required": true}, {"type": "double", "name": "embedding_dim_635",
+    "required": true}, {"type": "double", "name": "embedding_dim_636", "required":
+    true}, {"type": "double", "name": "embedding_dim_637", "required": true}, {"type":
+    "double", "name": "embedding_dim_638", "required": true}, {"type": "double", "name":
+    "embedding_dim_639", "required": true}, {"type": "double", "name": "embedding_dim_640",
+    "required": true}, {"type": "double", "name": "embedding_dim_641", "required":
+    true}, {"type": "double", "name": "embedding_dim_642", "required": true}, {"type":
+    "double", "name": "embedding_dim_643", "required": true}, {"type": "double", "name":
+    "embedding_dim_644", "required": true}, {"type": "double", "name": "embedding_dim_645",
+    "required": true}, {"type": "double", "name": "embedding_dim_646", "required":
+    true}, {"type": "double", "name": "embedding_dim_647", "required": true}, {"type":
+    "double", "name": "embedding_dim_648", "required": true}, {"type": "double", "name":
+    "embedding_dim_649", "required": true}, {"type": "double", "name": "embedding_dim_650",
+    "required": true}, {"type": "double", "name": "embedding_dim_651", "required":
+    true}, {"type": "double", "name": "embedding_dim_652", "required": true}, {"type":
+    "double", "name": "embedding_dim_653", "required": true}, {"type": "double", "name":
+    "embedding_dim_654", "required": true}, {"type": "double", "name": "embedding_dim_655",
+    "required": true}, {"type": "double", "name": "embedding_dim_656", "required":
+    true}, {"type": "double", "name": "embedding_dim_657", "required": true}, {"type":
+    "double", "name": "embedding_dim_658", "required": true}, {"type": "double", "name":
+    "embedding_dim_659", "required": true}, {"type": "double", "name": "embedding_dim_660",
+    "required": true}, {"type": "double", "name": "embedding_dim_661", "required":
+    true}, {"type": "double", "name": "embedding_dim_662", "required": true}, {"type":
+    "double", "name": "embedding_dim_663", "required": true}, {"type": "double", "name":
+    "embedding_dim_664", "required": true}, {"type": "double", "name": "embedding_dim_665",
+    "required": true}, {"type": "double", "name": "embedding_dim_666", "required":
+    true}, {"type": "double", "name": "embedding_dim_667", "required": true}, {"type":
+    "double", "name": "embedding_dim_668", "required": true}, {"type": "double", "name":
+    "embedding_dim_669", "required": true}, {"type": "double", "name": "embedding_dim_670",
+    "required": true}, {"type": "double", "name": "embedding_dim_671", "required":
+    true}, {"type": "double", "name": "embedding_dim_672", "required": true}, {"type":
+    "double", "name": "embedding_dim_673", "required": true}, {"type": "double", "name":
+    "embedding_dim_674", "required": true}, {"type": "double", "name": "embedding_dim_675",
+    "required": true}, {"type": "double", "name": "embedding_dim_676", "required":
+    true}, {"type": "double", "name": "embedding_dim_677", "required": true}, {"type":
+    "double", "name": "embedding_dim_678", "required": true}, {"type": "double", "name":
+    "embedding_dim_679", "required": true}, {"type": "double", "name": "embedding_dim_680",
+    "required": true}, {"type": "double", "name": "embedding_dim_681", "required":
+    true}, {"type": "double", "name": "embedding_dim_682", "required": true}, {"type":
+    "double", "name": "embedding_dim_683", "required": true}, {"type": "double", "name":
+    "embedding_dim_684", "required": true}, {"type": "double", "name": "embedding_dim_685",
+    "required": true}, {"type": "double", "name": "embedding_dim_686", "required":
+    true}, {"type": "double", "name": "embedding_dim_687", "required": true}, {"type":
+    "double", "name": "embedding_dim_688", "required": true}, {"type": "double", "name":
+    "embedding_dim_689", "required": true}, {"type": "double", "name": "embedding_dim_690",
+    "required": true}, {"type": "double", "name": "embedding_dim_691", "required":
+    true}, {"type": "double", "name": "embedding_dim_692", "required": true}, {"type":
+    "double", "name": "embedding_dim_693", "required": true}, {"type": "double", "name":
+    "embedding_dim_694", "required": true}, {"type": "double", "name": "embedding_dim_695",
+    "required": true}, {"type": "double", "name": "embedding_dim_696", "required":
+    true}, {"type": "double", "name": "embedding_dim_697", "required": true}, {"type":
+    "double", "name": "embedding_dim_698", "required": true}, {"type": "double", "name":
+    "embedding_dim_699", "required": true}, {"type": "double", "name": "embedding_dim_700",
+    "required": true}, {"type": "double", "name": "embedding_dim_701", "required":
+    true}, {"type": "double", "name": "embedding_dim_702", "required": true}, {"type":
+    "double", "name": "embedding_dim_703", "required": true}, {"type": "double", "name":
+    "embedding_dim_704", "required": true}, {"type": "double", "name": "embedding_dim_705",
+    "required": true}, {"type": "double", "name": "embedding_dim_706", "required":
+    true}, {"type": "double", "name": "embedding_dim_707", "required": true}, {"type":
+    "double", "name": "embedding_dim_708", "required": true}, {"type": "double", "name":
+    "embedding_dim_709", "required": true}, {"type": "double", "name": "embedding_dim_710",
+    "required": true}, {"type": "double", "name": "embedding_dim_711", "required":
+    true}, {"type": "double", "name": "embedding_dim_712", "required": true}, {"type":
+    "double", "name": "embedding_dim_713", "required": true}, {"type": "double", "name":
+    "embedding_dim_714", "required": true}, {"type": "double", "name": "embedding_dim_715",
+    "required": true}, {"type": "double", "name": "embedding_dim_716", "required":
+    true}, {"type": "double", "name": "embedding_dim_717", "required": true}, {"type":
+    "double", "name": "embedding_dim_718", "required": true}, {"type": "double", "name":
+    "embedding_dim_719", "required": true}, {"type": "double", "name": "embedding_dim_720",
+    "required": true}, {"type": "double", "name": "embedding_dim_721", "required":
+    true}, {"type": "double", "name": "embedding_dim_722", "required": true}, {"type":
+    "double", "name": "embedding_dim_723", "required": true}, {"type": "double", "name":
+    "embedding_dim_724", "required": true}, {"type": "double", "name": "embedding_dim_725",
+    "required": true}, {"type": "double", "name": "embedding_dim_726", "required":
+    true}, {"type": "double", "name": "embedding_dim_727", "required": true}, {"type":
+    "double", "name": "embedding_dim_728", "required": true}, {"type": "double", "name":
+    "embedding_dim_729", "required": true}, {"type": "double", "name": "embedding_dim_730",
+    "required": true}, {"type": "double", "name": "embedding_dim_731", "required":
+    true}, {"type": "double", "name": "embedding_dim_732", "required": true}, {"type":
+    "double", "name": "embedding_dim_733", "required": true}, {"type": "double", "name":
+    "embedding_dim_734", "required": true}, {"type": "double", "name": "embedding_dim_735",
+    "required": true}, {"type": "double", "name": "embedding_dim_736", "required":
+    true}, {"type": "double", "name": "embedding_dim_737", "required": true}, {"type":
+    "double", "name": "embedding_dim_738", "required": true}, {"type": "double", "name":
+    "embedding_dim_739", "required": true}, {"type": "double", "name": "embedding_dim_740",
+    "required": true}, {"type": "double", "name": "embedding_dim_741", "required":
+    true}, {"type": "double", "name": "embedding_dim_742", "required": true}, {"type":
+    "double", "name": "embedding_dim_743", "required": true}, {"type": "double", "name":
+    "embedding_dim_744", "required": true}, {"type": "double", "name": "embedding_dim_745",
+    "required": true}, {"type": "double", "name": "embedding_dim_746", "required":
+    true}, {"type": "double", "name": "embedding_dim_747", "required": true}, {"type":
+    "double", "name": "embedding_dim_748", "required": true}, {"type": "double", "name":
+    "embedding_dim_749", "required": true}, {"type": "double", "name": "embedding_dim_750",
+    "required": true}, {"type": "double", "name": "embedding_dim_751", "required":
+    true}, {"type": "double", "name": "embedding_dim_752", "required": true}, {"type":
+    "double", "name": "embedding_dim_753", "required": true}, {"type": "double", "name":
+    "embedding_dim_754", "required": true}, {"type": "double", "name": "embedding_dim_755",
+    "required": true}, {"type": "double", "name": "embedding_dim_756", "required":
+    true}, {"type": "double", "name": "embedding_dim_757", "required": true}, {"type":
+    "double", "name": "embedding_dim_758", "required": true}, {"type": "double", "name":
+    "embedding_dim_759", "required": true}, {"type": "double", "name": "embedding_dim_760",
+    "required": true}, {"type": "double", "name": "embedding_dim_761", "required":
+    true}, {"type": "double", "name": "embedding_dim_762", "required": true}, {"type":
+    "double", "name": "embedding_dim_763", "required": true}, {"type": "double", "name":
+    "embedding_dim_764", "required": true}, {"type": "double", "name": "embedding_dim_765",
+    "required": true}, {"type": "double", "name": "embedding_dim_766", "required":
+    true}, {"type": "double", "name": "embedding_dim_767", "required": true}, {"type":
+    "double", "name": "embedding_dim_768", "required": true}, {"type": "double", "name":
+    "embedding_dim_769", "required": true}, {"type": "double", "name": "embedding_dim_770",
+    "required": true}, {"type": "double", "name": "embedding_dim_771", "required":
+    true}, {"type": "double", "name": "embedding_dim_772", "required": true}, {"type":
+    "double", "name": "embedding_dim_773", "required": true}, {"type": "double", "name":
+    "embedding_dim_774", "required": true}, {"type": "double", "name": "embedding_dim_775",
+    "required": true}, {"type": "double", "name": "embedding_dim_776", "required":
+    true}, {"type": "double", "name": "embedding_dim_777", "required": true}, {"type":
+    "double", "name": "embedding_dim_778", "required": true}, {"type": "double", "name":
+    "embedding_dim_779", "required": true}, {"type": "double", "name": "embedding_dim_780",
+    "required": true}, {"type": "double", "name": "embedding_dim_781", "required":
+    true}, {"type": "double", "name": "embedding_dim_782", "required": true}, {"type":
+    "double", "name": "embedding_dim_783", "required": true}, {"type": "double", "name":
+    "embedding_dim_784", "required": true}, {"type": "double", "name": "embedding_dim_785",
+    "required": true}, {"type": "double", "name": "embedding_dim_786", "required":
+    true}, {"type": "double", "name": "embedding_dim_787", "required": true}, {"type":
+    "double", "name": "embedding_dim_788", "required": true}, {"type": "double", "name":
+    "embedding_dim_789", "required": true}, {"type": "double", "name": "embedding_dim_790",
+    "required": true}, {"type": "double", "name": "embedding_dim_791", "required":
+    true}, {"type": "double", "name": "embedding_dim_792", "required": true}, {"type":
+    "double", "name": "embedding_dim_793", "required": true}, {"type": "double", "name":
+    "embedding_dim_794", "required": true}, {"type": "double", "name": "embedding_dim_795",
+    "required": true}, {"type": "double", "name": "embedding_dim_796", "required":
+    true}, {"type": "double", "name": "embedding_dim_797", "required": true}, {"type":
+    "double", "name": "embedding_dim_798", "required": true}, {"type": "double", "name":
+    "embedding_dim_799", "required": true}, {"type": "double", "name": "embedding_dim_800",
+    "required": true}, {"type": "double", "name": "embedding_dim_801", "required":
+    true}, {"type": "double", "name": "embedding_dim_802", "required": true}, {"type":
+    "double", "name": "embedding_dim_803", "required": true}, {"type": "double", "name":
+    "embedding_dim_804", "required": true}, {"type": "double", "name": "embedding_dim_805",
+    "required": true}, {"type": "double", "name": "embedding_dim_806", "required":
+    true}, {"type": "double", "name": "embedding_dim_807", "required": true}, {"type":
+    "double", "name": "embedding_dim_808", "required": true}, {"type": "double", "name":
+    "embedding_dim_809", "required": true}, {"type": "double", "name": "embedding_dim_810",
+    "required": true}, {"type": "double", "name": "embedding_dim_811", "required":
+    true}, {"type": "double", "name": "embedding_dim_812", "required": true}, {"type":
+    "double", "name": "embedding_dim_813", "required": true}, {"type": "double", "name":
+    "embedding_dim_814", "required": true}, {"type": "double", "name": "embedding_dim_815",
+    "required": true}, {"type": "double", "name": "embedding_dim_816", "required":
+    true}, {"type": "double", "name": "embedding_dim_817", "required": true}, {"type":
+    "double", "name": "embedding_dim_818", "required": true}, {"type": "double", "name":
+    "embedding_dim_819", "required": true}, {"type": "double", "name": "embedding_dim_820",
+    "required": true}, {"type": "double", "name": "embedding_dim_821", "required":
+    true}, {"type": "double", "name": "embedding_dim_822", "required": true}, {"type":
+    "double", "name": "embedding_dim_823", "required": true}, {"type": "double", "name":
+    "embedding_dim_824", "required": true}, {"type": "double", "name": "embedding_dim_825",
+    "required": true}, {"type": "double", "name": "embedding_dim_826", "required":
+    true}, {"type": "double", "name": "embedding_dim_827", "required": true}, {"type":
+    "double", "name": "embedding_dim_828", "required": true}, {"type": "double", "name":
+    "embedding_dim_829", "required": true}, {"type": "double", "name": "embedding_dim_830",
+    "required": true}, {"type": "double", "name": "embedding_dim_831", "required":
+    true}, {"type": "double", "name": "embedding_dim_832", "required": true}, {"type":
+    "double", "name": "embedding_dim_833", "required": true}, {"type": "double", "name":
+    "embedding_dim_834", "required": true}, {"type": "double", "name": "embedding_dim_835",
+    "required": true}, {"type": "double", "name": "embedding_dim_836", "required":
+    true}, {"type": "double", "name": "embedding_dim_837", "required": true}, {"type":
+    "double", "name": "embedding_dim_838", "required": true}, {"type": "double", "name":
+    "embedding_dim_839", "required": true}, {"type": "double", "name": "embedding_dim_840",
+    "required": true}, {"type": "double", "name": "embedding_dim_841", "required":
+    true}, {"type": "double", "name": "embedding_dim_842", "required": true}, {"type":
+    "double", "name": "embedding_dim_843", "required": true}, {"type": "double", "name":
+    "embedding_dim_844", "required": true}, {"type": "double", "name": "embedding_dim_845",
+    "required": true}, {"type": "double", "name": "embedding_dim_846", "required":
+    true}, {"type": "double", "name": "embedding_dim_847", "required": true}, {"type":
+    "double", "name": "embedding_dim_848", "required": true}, {"type": "double", "name":
+    "embedding_dim_849", "required": true}, {"type": "double", "name": "embedding_dim_850",
+    "required": true}, {"type": "double", "name": "embedding_dim_851", "required":
+    true}, {"type": "double", "name": "embedding_dim_852", "required": true}, {"type":
+    "double", "name": "embedding_dim_853", "required": true}, {"type": "double", "name":
+    "embedding_dim_854", "required": true}, {"type": "double", "name": "embedding_dim_855",
+    "required": true}, {"type": "double", "name": "embedding_dim_856", "required":
+    true}, {"type": "double", "name": "embedding_dim_857", "required": true}, {"type":
+    "double", "name": "embedding_dim_858", "required": true}, {"type": "double", "name":
+    "embedding_dim_859", "required": true}, {"type": "double", "name": "embedding_dim_860",
+    "required": true}, {"type": "double", "name": "embedding_dim_861", "required":
+    true}, {"type": "double", "name": "embedding_dim_862", "required": true}, {"type":
+    "double", "name": "embedding_dim_863", "required": true}, {"type": "double", "name":
+    "embedding_dim_864", "required": true}, {"type": "double", "name": "embedding_dim_865",
+    "required": true}, {"type": "double", "name": "embedding_dim_866", "required":
+    true}, {"type": "double", "name": "embedding_dim_867", "required": true}, {"type":
+    "double", "name": "embedding_dim_868", "required": true}, {"type": "double", "name":
+    "embedding_dim_869", "required": true}, {"type": "double", "name": "embedding_dim_870",
+    "required": true}, {"type": "double", "name": "embedding_dim_871", "required":
+    true}, {"type": "double", "name": "embedding_dim_872", "required": true}, {"type":
+    "double", "name": "embedding_dim_873", "required": true}, {"type": "double", "name":
+    "embedding_dim_874", "required": true}, {"type": "double", "name": "embedding_dim_875",
+    "required": true}, {"type": "double", "name": "embedding_dim_876", "required":
+    true}, {"type": "double", "name": "embedding_dim_877", "required": true}, {"type":
+    "double", "name": "embedding_dim_878", "required": true}, {"type": "double", "name":
+    "embedding_dim_879", "required": true}, {"type": "double", "name": "embedding_dim_880",
+    "required": true}, {"type": "double", "name": "embedding_dim_881", "required":
+    true}, {"type": "double", "name": "embedding_dim_882", "required": true}, {"type":
+    "double", "name": "embedding_dim_883", "required": true}, {"type": "double", "name":
+    "embedding_dim_884", "required": true}, {"type": "double", "name": "embedding_dim_885",
+    "required": true}, {"type": "double", "name": "embedding_dim_886", "required":
+    true}, {"type": "double", "name": "embedding_dim_887", "required": true}, {"type":
+    "double", "name": "embedding_dim_888", "required": true}, {"type": "double", "name":
+    "embedding_dim_889", "required": true}, {"type": "double", "name": "embedding_dim_890",
+    "required": true}, {"type": "double", "name": "embedding_dim_891", "required":
+    true}, {"type": "double", "name": "embedding_dim_892", "required": true}, {"type":
+    "double", "name": "embedding_dim_893", "required": true}, {"type": "double", "name":
+    "embedding_dim_894", "required": true}, {"type": "double", "name": "embedding_dim_895",
+    "required": true}, {"type": "double", "name": "embedding_dim_896", "required":
+    true}, {"type": "double", "name": "embedding_dim_897", "required": true}, {"type":
+    "double", "name": "embedding_dim_898", "required": true}, {"type": "double", "name":
+    "embedding_dim_899", "required": true}, {"type": "double", "name": "embedding_dim_900",
+    "required": true}, {"type": "double", "name": "embedding_dim_901", "required":
+    true}, {"type": "double", "name": "embedding_dim_902", "required": true}, {"type":
+    "double", "name": "embedding_dim_903", "required": true}, {"type": "double", "name":
+    "embedding_dim_904", "required": true}, {"type": "double", "name": "embedding_dim_905",
+    "required": true}, {"type": "double", "name": "embedding_dim_906", "required":
+    true}, {"type": "double", "name": "embedding_dim_907", "required": true}, {"type":
+    "double", "name": "embedding_dim_908", "required": true}, {"type": "double", "name":
+    "embedding_dim_909", "required": true}, {"type": "double", "name": "embedding_dim_910",
+    "required": true}, {"type": "double", "name": "embedding_dim_911", "required":
+    true}, {"type": "double", "name": "embedding_dim_912", "required": true}, {"type":
+    "double", "name": "embedding_dim_913", "required": true}, {"type": "double", "name":
+    "embedding_dim_914", "required": true}, {"type": "double", "name": "embedding_dim_915",
+    "required": true}, {"type": "double", "name": "embedding_dim_916", "required":
+    true}, {"type": "double", "name": "embedding_dim_917", "required": true}, {"type":
+    "double", "name": "embedding_dim_918", "required": true}, {"type": "double", "name":
+    "embedding_dim_919", "required": true}, {"type": "double", "name": "embedding_dim_920",
+    "required": true}, {"type": "double", "name": "embedding_dim_921", "required":
+    true}, {"type": "double", "name": "embedding_dim_922", "required": true}, {"type":
+    "double", "name": "embedding_dim_923", "required": true}, {"type": "double", "name":
+    "embedding_dim_924", "required": true}, {"type": "double", "name": "embedding_dim_925",
+    "required": true}, {"type": "double", "name": "embedding_dim_926", "required":
+    true}, {"type": "double", "name": "embedding_dim_927", "required": true}, {"type":
+    "double", "name": "embedding_dim_928", "required": true}, {"type": "double", "name":
+    "embedding_dim_929", "required": true}, {"type": "double", "name": "embedding_dim_930",
+    "required": true}, {"type": "double", "name": "embedding_dim_931", "required":
+    true}, {"type": "double", "name": "embedding_dim_932", "required": true}, {"type":
+    "double", "name": "embedding_dim_933", "required": true}, {"type": "double", "name":
+    "embedding_dim_934", "required": true}, {"type": "double", "name": "embedding_dim_935",
+    "required": true}, {"type": "double", "name": "embedding_dim_936", "required":
+    true}, {"type": "double", "name": "embedding_dim_937", "required": true}, {"type":
+    "double", "name": "embedding_dim_938", "required": true}, {"type": "double", "name":
+    "embedding_dim_939", "required": true}, {"type": "double", "name": "embedding_dim_940",
+    "required": true}, {"type": "double", "name": "embedding_dim_941", "required":
+    true}, {"type": "double", "name": "embedding_dim_942", "required": true}, {"type":
+    "double", "name": "embedding_dim_943", "required": true}, {"type": "double", "name":
+    "embedding_dim_944", "required": true}, {"type": "double", "name": "embedding_dim_945",
+    "required": true}, {"type": "double", "name": "embedding_dim_946", "required":
+    true}, {"type": "double", "name": "embedding_dim_947", "required": true}, {"type":
+    "double", "name": "embedding_dim_948", "required": true}, {"type": "double", "name":
+    "embedding_dim_949", "required": true}, {"type": "double", "name": "embedding_dim_950",
+    "required": true}, {"type": "double", "name": "embedding_dim_951", "required":
+    true}, {"type": "double", "name": "embedding_dim_952", "required": true}, {"type":
+    "double", "name": "embedding_dim_953", "required": true}, {"type": "double", "name":
+    "embedding_dim_954", "required": true}, {"type": "double", "name": "embedding_dim_955",
+    "required": true}, {"type": "double", "name": "embedding_dim_956", "required":
+    true}, {"type": "double", "name": "embedding_dim_957", "required": true}, {"type":
+    "double", "name": "embedding_dim_958", "required": true}, {"type": "double", "name":
+    "embedding_dim_959", "required": true}, {"type": "double", "name": "embedding_dim_960",
+    "required": true}, {"type": "double", "name": "embedding_dim_961", "required":
+    true}, {"type": "double", "name": "embedding_dim_962", "required": true}, {"type":
+    "double", "name": "embedding_dim_963", "required": true}, {"type": "double", "name":
+    "embedding_dim_964", "required": true}, {"type": "double", "name": "embedding_dim_965",
+    "required": true}, {"type": "double", "name": "embedding_dim_966", "required":
+    true}, {"type": "double", "name": "embedding_dim_967", "required": true}, {"type":
+    "double", "name": "embedding_dim_968", "required": true}, {"type": "double", "name":
+    "embedding_dim_969", "required": true}, {"type": "double", "name": "embedding_dim_970",
+    "required": true}, {"type": "double", "name": "embedding_dim_971", "required":
+    true}, {"type": "double", "name": "embedding_dim_972", "required": true}, {"type":
+    "double", "name": "embedding_dim_973", "required": true}, {"type": "double", "name":
+    "embedding_dim_974", "required": true}, {"type": "double", "name": "embedding_dim_975",
+    "required": true}, {"type": "double", "name": "embedding_dim_976", "required":
+    true}, {"type": "double", "name": "embedding_dim_977", "required": true}, {"type":
+    "double", "name": "embedding_dim_978", "required": true}, {"type": "double", "name":
+    "embedding_dim_979", "required": true}, {"type": "double", "name": "embedding_dim_980",
+    "required": true}, {"type": "double", "name": "embedding_dim_981", "required":
+    true}, {"type": "double", "name": "embedding_dim_982", "required": true}, {"type":
+    "double", "name": "embedding_dim_983", "required": true}, {"type": "double", "name":
+    "embedding_dim_984", "required": true}, {"type": "double", "name": "embedding_dim_985",
+    "required": true}, {"type": "double", "name": "embedding_dim_986", "required":
+    true}, {"type": "double", "name": "embedding_dim_987", "required": true}, {"type":
+    "double", "name": "embedding_dim_988", "required": true}, {"type": "double", "name":
+    "embedding_dim_989", "required": true}, {"type": "double", "name": "embedding_dim_990",
+    "required": true}, {"type": "double", "name": "embedding_dim_991", "required":
+    true}, {"type": "double", "name": "embedding_dim_992", "required": true}, {"type":
+    "double", "name": "embedding_dim_993", "required": true}, {"type": "double", "name":
+    "embedding_dim_994", "required": true}, {"type": "double", "name": "embedding_dim_995",
+    "required": true}, {"type": "double", "name": "embedding_dim_996", "required":
+    true}, {"type": "double", "name": "embedding_dim_997", "required": true}, {"type":
+    "double", "name": "embedding_dim_998", "required": true}, {"type": "double", "name":
+    "embedding_dim_999", "required": true}, {"type": "double", "name": "embedding_dim_1000",
+    "required": true}, {"type": "double", "name": "embedding_dim_1001", "required":
+    true}, {"type": "double", "name": "embedding_dim_1002", "required": true}, {"type":
+    "double", "name": "embedding_dim_1003", "required": true}, {"type": "double",
+    "name": "embedding_dim_1004", "required": true}, {"type": "double", "name": "embedding_dim_1005",
+    "required": true}, {"type": "double", "name": "embedding_dim_1006", "required":
+    true}, {"type": "double", "name": "embedding_dim_1007", "required": true}, {"type":
+    "double", "name": "embedding_dim_1008", "required": true}, {"type": "double",
+    "name": "embedding_dim_1009", "required": true}, {"type": "double", "name": "embedding_dim_1010",
+    "required": true}, {"type": "double", "name": "embedding_dim_1011", "required":
+    true}, {"type": "double", "name": "embedding_dim_1012", "required": true}, {"type":
+    "double", "name": "embedding_dim_1013", "required": true}, {"type": "double",
+    "name": "embedding_dim_1014", "required": true}, {"type": "double", "name": "embedding_dim_1015",
+    "required": true}, {"type": "double", "name": "embedding_dim_1016", "required":
+    true}, {"type": "double", "name": "embedding_dim_1017", "required": true}, {"type":
+    "double", "name": "embedding_dim_1018", "required": true}, {"type": "double",
+    "name": "embedding_dim_1019", "required": true}, {"type": "double", "name": "embedding_dim_1020",
+    "required": true}, {"type": "double", "name": "embedding_dim_1021", "required":
+    true}, {"type": "double", "name": "embedding_dim_1022", "required": true}, {"type":
+    "double", "name": "embedding_dim_1023", "required": true}, {"type": "double",
+    "name": "embedding_dim_1024", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "object", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-07-07 01:25:40.654956'

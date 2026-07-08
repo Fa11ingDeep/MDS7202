@@ -236,3 +236,7 @@ labs/lab_8/__MACOSX/
 # No ignorar la imagen del lab 8
 !labs/lab_8/imagenes/
 !labs/lab_8/imagenes/**
+
+# No ignorar la imagen del proyecto final
+!labs/ProyectoFinal/img/
+!labs/ProyectoFinal/img/**

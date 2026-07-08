@@ -1,0 +1,19 @@
+[project]
+name = "chaucherapp-backend"
+version = "0.1.0"
+description = "Backend FastAPI para clasificación de prioridad de tickets"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic",
+    "python-dotenv",
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "joblib",
+    "langchain-google-genai",
+]
+
+[tool.uv]
+package = false

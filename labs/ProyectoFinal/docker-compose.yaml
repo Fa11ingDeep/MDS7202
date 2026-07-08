@@ -1,0 +1,39 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    image: chaucherapp-backend:latest
+    container_name: chaucherapp-backend
+    environment:
+      GOOGLE_API_KEY: ${GOOGLE_API_KEY}
+    volumes:
+      - ./backend:/app/backend
+      - ./modelo_final.pkl:/app/modelo_final.pkl:ro
+    ports:
+      - "8000:8000"
+    networks:
+      - chaucherapp-net
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    image: chaucherapp-frontend:latest
+    container_name: chaucherapp-frontend
+    environment:
+      BACKEND_URL: ${BACKEND_URL}
+      GRADIO_SERVER_NAME: ${GRADIO_SERVER_NAME}
+      GRADIO_SERVER_PORT: ${GRADIO_SERVER_PORT}
+    volumes:
+      - ./frontend:/app/frontend
+    ports:
+      - "7860:7860"
+    depends_on:
+      - backend
+    networks:
+      - chaucherapp-net
+
+networks:
+  chaucherapp-net:
+    driver: bridge
